@@ -19,7 +19,6 @@ public class Quiz3 {
 			System.out.println();
 		}
 		
-		//지역변수의 유효 범위는 변수가 선언된 블록 스코프에 따라 달라진다
 	}
 }
 

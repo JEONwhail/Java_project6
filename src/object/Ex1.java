@@ -6,11 +6,25 @@ package object;
 public class Ex1 {
 
 	public static void main(String[] args) {
-		Student student = new Student("둘리", 10000); // 만원을 가진 둘리라는 학생을 만든다
-		Bus bus = new Bus(100); // 100 버스를 만든다
-		student.takeBus(bus); // 학생이 100번 버스에 탄다
-		student.showInfo(); // 학생의 정보를 확인한다
-		bus.showInfo();// 버스의 정보를 확인한다
+		
+		Student student = new Student("둘리", 10000);
+		// 마원을 가진 둘리 학생
+		
+		Bus bus = new Bus(100);
+		// 100버스를 만든다
+		
+		student.takeBus(bus);
+		// 둘리 학생이 100번 버스에 탄다
+		
+		student.showInfo();
+		// 이후의 학생의 정보를 확인한다
+		
+		bus.showInfo();
+		// 이후의 버스의 정보를 확인한다
+		
+		
+		
+		
 	}
 }
 
@@ -20,7 +34,7 @@ class Bus {
 	int passengerCount; // 승객수
 	int money; // 수입
 
-	// 버스번호를 초기화하는 생성자
+
 	public Bus(int busNumebr) {
 		this.busNumber = busNumebr;
 	}
@@ -40,7 +54,9 @@ class Bus {
 //지하철 클래스
 class Subway {
 	String lineNumber; // 지하철 노선번호
+	
 	int passengerCount; // 승객수
+	
 	int money; // 수입
 
 	// 지하철 노선번호를 초기화하는 생성자
@@ -59,6 +75,8 @@ class Subway {
 	}
 
 }
+
+
 
 //학생클래스 구현하기
 class Student {

@@ -17,12 +17,10 @@ public class Ex1 {
 class BirthDay {
 	int year;
 
-	// 태어난 연도를 변경하는 메소드
 	public void setYear(int year) {
-		this.year = year; // 변수의 이름이 같을 때, this를 사용해서 구분할 수 있음
+		this.year = year; 
 	}
 
-	// this의 값을 출력하는 메소드
 	public void printThis() {
 		System.out.println(this);
 	}

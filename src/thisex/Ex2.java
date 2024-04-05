@@ -7,9 +7,12 @@ public class Ex2 {
 
 	public static void main(String[] args) {
 		Person person = new Person();
-		person.setName("둘리"); // 이름 변경
-		System.out.println(person); // 변수 person 출력
-		person.printThis(); // 변수 this 출력. 위와 같은 값이 출력됨
+		
+		person.setName("둘리");
+		
+		System.out.println(person);
+		
+		person.printThis(); //위와 같은 값이 출력됨
 	}
 }
 

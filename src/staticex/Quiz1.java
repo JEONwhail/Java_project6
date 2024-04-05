@@ -11,22 +11,26 @@ package staticex;
 public class Quiz1 {
 
 	public static void main(String[] args) {
+		
 		Card card1 = new Card();
-		card1.showInfo();		
+		card1.showInfo();
+		
 		Card card2 = new Card();
-		card2.showInfo();		
+		card2.showInfo();
+		
 		Card card3 = new Card();
 		card3.showInfo();
+
 	}
 }
 
 class Card {
-	static int serialNum = 100;
-	int cardNo; //카드번호
+	static int cardNum = 300;
+	int cardNo; 
 	
 	public Card() {
-		this.cardNo = serialNum; //카드번호에 시리얼번호를 대입한다
-		serialNum++; //카드번호를 먼저 대입하고 다음에 시리얼번호 증가
+		this.cardNo = cardNum; 
+		cardNum++; 
 	}
 
 	public void showInfo() {
